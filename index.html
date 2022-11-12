@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>TypeScript</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+    <style>
+        .title1 {
+            font-size: 2.5em;
+        }
+        
+        .title2 {
+            font-size: 1.5em;
+        }
+        
+        .fontSize1 {
+            font-size: 0.5em;
+        }
+        
+        .fontSize2 {
+            font-size: 1.25em;
+        }
+        
+        .fontSize3 {
+            font-size: 0.75em;
+        }
+        
+        .fontSize4 {
+            font-size: 0.75em;
+        }
+        
+        li {
+            margin: 20px 0;
+        }
+    </style>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-auto-animate>
+                <p class="title1">TypeScript</p>
+            </section>
+            <section data-auto-animate>
+                <p class="title1" style="color: #3b82f6">TypeScript</p>
+                <p class="title2" style="color: coral">JavaScript的超集</p>
+                <p class="fontSize1">
+                    TypeScript是JavaScript类型的超集，它可以编译成纯JavaScript
+                </p>
+                <p class="fontSize1">
+                    TypeScript可以在任何浏览器、任何计算机和任何操作系统上运行，并且是开源的
+                </p>
+            </section>
+            <section data-auto-animate>
+                <section data-auto-animate>
+                    <p class="title2" style="color: #3b82f6">为什么用TypeScript？</p>
+                </section>
+                <section data-auto-animate>
+                    <p class="title2" style="color: #3b82f6">为什么用TypeScript？</p>
+                    <p style="color: coral">
+                        1. TypeScript 增加了代码的可读性和可维护性
+                    </p>
+                    <p style="color: coral">2. TypeScript 非常包容</p>
+                </section>
+                <section data-auto-animate>
+                    <p class="title2" style="color: #3b82f6">为什么用TypeScript？</p>
+                    <p style="color: coral">
+                        1. TypeScript 增加了代码的可读性和可维护性
+                    </p>
+                    <ul>
+                        <li class="fontSize3">
+                            可以在编译阶段就发现大部分错误，大部分的函数看看类型的定义就可以知道如何使用了
+                        </li>
+                        <li class="fontSize3">
+                            增强了编辑器和 IDE 的功能，包括代码补全、接口提示、跳转到定义等
+                        </li>
+                    </ul>
+                </section>
+                <section data-auto-animate>
+                    <p class="title2" style="color: #3b82f6">为什么用TypeScript？</p>
+                    <p style="color: coral">2. TypeScript 非常包容</p>
+                    <ul>
+                        <li class="fontSize3">
+                            TypeScript 是 JavaScript 的超集，.js 文件可以直接重命名为 .ts 即可
+                        </li>
+                        <li class="fontSize3">
+                            即使不显式的定义类型，也能够自动做出类型推论
+                        </li>
+                        <li class="fontSize3">可以定义从简单到复杂的几乎一切类型</li>
+                        <li class="fontSize3">
+                            即使 TypeScript 编译报错，也可以生成 JavaScript 文件
+                        </li>
+                        <li class="fontSize3">
+                            兼容第三方库，即使第三方库不是用 TypeScript 写的，也可以编写单独的类型文件供 TypeScript 读取
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section data-auto-animate>
+                <section data-auto-animate>
+                    <p class="title2" style="color: #3b82f6">安装TypeScript</p>
+                </section>
+                <section data-auto-animate>
+                    <p style="color: #3b82f6">有两种主要的方式来获取TypeScript工具：</p>
+                    <ul>
+                        <li style="color: coral">通过npm（Node.js包管理器）</li>
+                        <li>安装Visual Studio的TypeScript插件</li>
+                    </ul>
+                </section>
+                <section data-auto-animate>
+                    <p class="fontSize3" style="color: #3b82f6">安装</p>
+                    <code data-trim data-noescape style="background-color: #152740; padding: 10px 20px">
+							npm install -g typescript
+						</code>
+                    <p class="fontSize3" style="color: #3b82f6; margin-top: 20px">
+                        编译
+                    </p>
+                    <code data-trim data-noescape style="background-color: #152740; padding: 10px 20px">
+							tsc helloworld.ts
+						</code>
+                </section>
+            </section>
+            <section data-auto-animate>
+                <p class="title2" style="color: #3b82f6">使用TypeScript</p>
+                <p>
+                    <a href="https://www.tslang.cn/" target="_blank" style="color: coral">官网<br />
+							https://www.tslang.cn/
+						</a>
+                </p>
+                <p>
+                    <a href="https://www.runoob.com/manual/gitbook/TypeScript/_book/" target="_blank" style="color: coral">中文手册<br />
+							https://www.runoob.com/manual/gitbook/TypeScript/_book/</a
+						>
+					</p>
+				</section>
+				<section data-auto-animate>
+					<section data-auto-animate>
+						<p class="title2" style="color: #3b82f6">作业</p>
+					</section>
+					<section data-auto-animate>
+						<ul style="width: 100%" class="fontSize4">
+							<li style="color: coral">
+								安装好TypeScript并自行尝试跑通。查阅文档，使用TypeScript的标准注明好每一个变量的类型，鼓励使用解构、模板字符串等
+							</li>
+							<li style="color: coral">定义一个这样的对象接口（ObjectItem）</li>
+							<pre>
+                    <code data-trim data-noescape style="background-color: #152740; padding: 10px 20px">
+                        {
+                            "id": "序号，string类型",
+                            "timestamp": "生成时的时间戳，number类型",
+                            "desc": [
+                                "你的姓名，string类型",
+                                "完成日期，string类型"
+                            ]
+                        }
+						</code></pre>
+							<li style="color: coral">
+								定义一个用来生成这样的对象的函数，参数类型为number（代表序号），返回值为ObjectItem
+							</li>
+							<li style="color: coral">
+								定义一个根据这样的对象输出指定信息的函数，参数类型为ObjectItem，返回值为void，输出格式如下
+							</li>
+							<pre>
+                    <code data-trim data-noescape style="background-color: #152740; padding: 10px 20px">
+                        ID：0，时间戳：1668234242791，作者：刘宏伟，日期：2022-11-12
+						</code></pre>
+							<li style="color: coral">
+								每隔一秒生成一个ObjectItem类型的对象并按格式输出信息，共10次
+							</li>
+						</ul>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+			});
+		</script>
+	</body>
+</html>
